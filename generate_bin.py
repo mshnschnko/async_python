@@ -3,7 +3,7 @@ import os
 
 def generate_bin_files(count: int, size: int) -> None:
     for cnt in range(count):
-        with open(os.path.join("large_files", str(cnt+1)), "wb") as file:
+        with open(os.path.join("files/subfiles", "1_" + str(cnt+1)), "wb") as file:
             file.write(os.urandom(size))
 
 
